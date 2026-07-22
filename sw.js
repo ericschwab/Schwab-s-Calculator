@@ -1,4 +1,4 @@
-const CACHE = "rpn12c-v2";
+const CACHE = "rpn12c-v3";
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(["./", "./index.html", "./apple-touch-icon.png", "./icon-512.png"])).then(() => self.skipWaiting()));
 });
